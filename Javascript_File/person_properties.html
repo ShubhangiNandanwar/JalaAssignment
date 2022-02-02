@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>object "person" with properties firstname and lastname </h1>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	
+	<script>
+		var person = new Object();
+    
+		person.firstName = "ABC";
+		person["lastName"] = "XYZ"; 
+		person.getFullName = function () {
+				return this.firstName + ' ' + this.lastName;
+			};
+
+		// access properties & methods 
+
+		document.getElementById("p1").innerHTML = person["firstName"];
+		document.getElementById("p2").innerHTML = person["lastName"];
+
+		document.getElementById("p3").innerHTML = person.getFullName();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+} 
+
+th,td {
+  border: 1px solid black;
+}
+
+table.a {
+  table-layout: None;
+  width: 180px;  
+}
+
+table.b {
+  table-layout: fixed;
+  width: 180px;  
+}
+
+</style>
+</head>
+<body>
+
+<h1>The table Layout Property</h1><br>
+
+<h2>Table Layout: None</h2>
+<table class="a">
+  <tr>
+    <th>Sr.No.</th>
+    <th>Name</th>
+    <th>Designation</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>ABC</td>
+    <td>Manager</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>PQR</td>
+    <td>Clerk</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>XYZ</td>
+    <td>Senior Manager</td>
+  </tr>
+</table>
+
+<h2>Table Layout: Fixed</h2>
+<table class="b">
+  <tr>
+    <th>Sr.No.</th>
+    <th>Name</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>ABC</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>PQR</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>XYZ</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+
+</body>
+</html>

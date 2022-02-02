@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Call() and apply() Functions</h2>
+
+<p>The call() method takes arguments separately.</p>
+<p id="demo1"></p>
+
+<p>The apply() method takes arguments as an array.</p>
+<p id="demo2"></p>
+
+<script>
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city ;
+  }
+}
+
+const person1 = {
+  firstName:"ABC",
+  lastName: "XYZ"
+}
+document.getElementById("demo1").innerHTML = person.fullName.apply(person1, ["Oslo"]); 
+
+
+const person2 = {
+  firstName:"PQR",
+  lastName: "LMN"
+}
+
+document.getElementById("demo2").innerHTML = person.fullName.call(person2, "Norway"); 
+</script>
+
+</body>
+</html>

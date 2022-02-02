@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+ <body>
+    
+  <h4>
+        To count the number of 
+        times a button is clicked..
+    </h4>
+  
+    <button id="btn">Count</button>
+  
+    <p>
+        Button Clicked<b> <span 
+        id="display">0</span></b> Times
+    </p>
+  
+    <script>
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+  
+        btn.onclick = function () {
+            count++;
+            disp.innerHTML = count;
+        }
+    </script>
+</body>
+</html>

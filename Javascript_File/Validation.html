@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "" || x == null) {
+    alert("Name must not be Empty..");
+    return false;
+  }
+  else
+  alert("Data Submitted Succesfully..");
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript validation for the text box doesn't should be empty..</h2>
+
+<form name="myForm" onsubmit="return validateForm()" method="post" required>
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
